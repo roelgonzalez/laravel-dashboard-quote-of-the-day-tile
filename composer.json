@@ -1,0 +1,47 @@
+{
+    "name": "roelgonzalez/laravel-dashboard-quote-of-the-day-tile",
+    "description": "A quote of the day tile for the Laravel Dashboard",
+    "keywords": [
+        "roelgonzalez",
+        "laravel-dashboard-quote-of-the-day-tile"
+    ],
+    "homepage": "https://github.com/roelgonzalez/laravel-dashboard-quote-of-the-day-tile",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roël Gonzalez",
+            "email": "roelgonzalez94@gmail.com",
+            "homepage": "https://github.com/roelgonzalez",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^7.4",
+        "spatie/laravel-dashboard": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "RoelGonzalez\\QuoteOfTheDayTile\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RoelGonzalez\\QuoteOfTheDayTile\\QuoteOfTheDayTileServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
