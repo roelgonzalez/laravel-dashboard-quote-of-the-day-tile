@@ -2,7 +2,6 @@
 
 namespace RoelGonzalez\QuoteOfTheDayTile;
 
-use App\QuoteOfDayTile\QuoteOfDayStore;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Http;
 
@@ -12,7 +11,7 @@ class FetchQuoteOfTheDayDataCommand extends Command
 
     protected $description = 'Fetch data for quote of the day tile';
 
-    public function handle()
+    public function handle(): void
     {
         $quoteOfTheDayData = Http::withHeaders([
             'Accept' => 'application/json',

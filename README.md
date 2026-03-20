@@ -9,6 +9,12 @@ This tile can be used on [the Laravel Dashboard](https://docs.spatie.be/laravel-
 
 <p align="center"><img src="art/img.png" alt="Screenshot of Quote of the Day Tile"></p>
 
+## Compatibility
+
+- PHP 8.3 and newer
+- Laravel Dashboard v4
+- Laravel 11+ and Livewire 4+
+
 ## Installation
 
 You can install the package via composer:

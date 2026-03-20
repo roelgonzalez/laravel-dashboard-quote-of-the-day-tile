@@ -7,7 +7,7 @@ use Livewire\Livewire;
 
 class QuoteOfTheDayTileServiceProvider extends ServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
         if ($this->app->runningInConsole()) {
             $this->commands([

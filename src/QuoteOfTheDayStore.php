@@ -8,7 +8,7 @@ class QuoteOfTheDayStore
 {
     private Tile $tile;
 
-    public static function make()
+    public static function make(): self
     {
         return new static();
     }
@@ -25,8 +25,8 @@ class QuoteOfTheDayStore
         return $this;
     }
 
-    public function getQuoteOfTheDayData()
+    public function getQuoteOfTheDayData(): array
     {
-        return $this->tile->getData('quote-of-the-day-data');
+        return $this->tile->getData('quote-of-the-day-data') ?? [];
     }
 }

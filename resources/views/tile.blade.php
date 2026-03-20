@@ -1,4 +1,4 @@
-<x-dashboard-tile :position="$position" :refresh-interval="$refreshIntervalInSeconds">
+<x-dashboard-tile :position="$position" :refresh-interval="$refreshInterval">
     <div class="flex flex-col justify-center w-full h-full">
         <div>
             <div class="border-l-2 border-teal-300">
